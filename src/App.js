@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Karakterler</h1>
-      {data.map((result, i) => <Karakter key={i} props={result} />)}
+      {data.map((result, i) => <Karakter title={result.name} key={i} props={result} />)}
     </div>
 
 
