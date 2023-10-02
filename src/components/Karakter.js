@@ -1,6 +1,6 @@
 import React from "react";
 
-import Accord from "./Accord";
+
 
 const Karakter =( { props} ) => {
 

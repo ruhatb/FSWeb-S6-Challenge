@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Karakter from "./Karakter";
 
+import './App.css';
 
 export default function Accord(props) {
 const { title, children } = props;
