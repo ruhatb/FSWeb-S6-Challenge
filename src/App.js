@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import Karakter from './components/Karakter';
 
+import Accord from './components/Accord';
+import { Children } from 'react';
 
 const App = () => {
 
@@ -35,13 +37,17 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Karakterler</h1>
-      {data.map((result, i) => <Karakter title={result.name} key={i} props={result} />)}
-    </div>
-
-
-
+      {data.map((result, i) => (
+        <Accord  title={result.name} >
+          <Karakter key={result.height}  props={result} />
+        </Accord> )
+      )};
+      </div>
   );
-}
 
-export default App;
+      };
+   
+
+      export default App;
+
 
